@@ -20,10 +20,10 @@ The main less file 'src/styles/main.less' imports all other styles. Add a Bootsw
 
 The sole purpose of this app is for Bootstrap development. It is the starter base for building custom webapps with Bootstrap.
 
-Designed to be as modular as possible.
-Designed to incorporate Bootswatch themes.
-Designed for the 'public' folder to be run on an existing apache server.
-Designed to be a foundation and added to/expanded. I.E. add angular.js, express, etc...
+- Designed to be as modular as possible.
+- Designed to incorporate Bootswatch themes.
+- Designed for the 'public' folder to be run on an existing apache server.
+- Designed to be a foundation and added to/expanded. I.E. add angular.js, express, etc...
 
 ## Installation
 
