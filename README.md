@@ -1,5 +1,3 @@
-# boot-build
-
 ## Synopsis
 
 A gulp webapp for Bootstrap with Less.
@@ -38,8 +36,6 @@ The sole purpose of this app is for Bootstrap development. It is the starter bas
 - Run 'gulp serve' to preview and watch for changes. This outputs to the '.tmp' directory.
 
 ## To Do
-
-- Modularize gulpfile into tasks.
 
 ## Contributors
 
