@@ -1,13 +1,12 @@
 /*global -$ */
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-
-var requireDir = require('require-dir');
-var dir = requireDir('gulp');
+var gulp = require('gulp'),
+    $ = require('gulp-load-plugins')(),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload,
+    requireDir = require('require-dir'),
+    dir = requireDir('gulp');
 
 gulp.task('build', ['copy', 'jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('public/**/*').pipe($.size({title: 'build', gzip: true}));
