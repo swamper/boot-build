@@ -1,8 +1,8 @@
 /*global -$ */
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+var gulp = require('gulp'),
+    $ = require('gulp-load-plugins')();
 
 gulp.task('extras', function () {
   return gulp.src([

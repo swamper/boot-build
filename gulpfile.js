@@ -3,8 +3,6 @@
 
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
-    browserSync = require('browser-sync'),
-    reload = browserSync.reload,
     requireDir = require('require-dir'),
     dir = requireDir('gulp');
 

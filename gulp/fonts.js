@@ -1,10 +1,10 @@
 /*global -$ */
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var gulp = require('gulp'),
+    $ = require('gulp-load-plugins')(),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload;
 
 gulp.task('fonts', function () {
   return gulp.src(require('main-bower-files')({

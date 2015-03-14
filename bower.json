@@ -1,12 +1,13 @@
 {
   "name": "boot-build",
   "private": true,
-  "dev-dependencies": {},
+  "version": "0.0.1",
+  "dependencies": {},
   "devDependencies": {
     "bootstrap": "~3.3.2",
-    "jquery": "~2.1.3",
-    "apache-server-configs": "~2.13.0",
+    "bootswatch": "~3.3.2",
     "fontawesome": "~4.3.0",
-    "bootswatch": "~3.3.2"
+    "jquery": "~2.1.3",
+    "apache-server-configs": "~2.13.0"
   }
 }
