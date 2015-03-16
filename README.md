@@ -1,46 +1,85 @@
-## Synopsis
+# boot-build
+A Bootstrap, Bootswatch, Gulp, less, and html app builder.
 
-A gulp webapp for Bootstrap with Less.
+Includes [*Bootswatch*](http://bootswatch.com) themes and [*Font-Awesome*](https://fortawesome.github.io/Font-Awesome/).
 
-This app was originally built from the Yeoman generator ['gulp-webapp'](https://github.com/yeoman/generator-gulp-webapp) built by the Yeoman Team.
+## THIS IS A W.I.P
 
-It includes:
+## What is it?
 
-['Bootswatch'] (https://github.com/thomaspark/bootswatch)
+In a nutshell...
 
-['Font-Awesome'] (https://github.com/FortAwesome/Font-Awesome)
+package.json :
 
-['h5bp apache-server-configs'] (https://github.com/h5bp/server-configs-apache)
+- browser-sync
+- del
+- gulp
+- gulp-autoprefixer
+- gulp-concat
+- gulp-filter
+- gulp-imagemin
+- gulp-jshint
+- gulp-karma
+- gulp-less
+- gulp-load-plugins
+- gulp-minify-css
+- gulp-minify-html
+- gulp-size
+- gulp-sourcemaps
+- gulp-uglify
+- gulp-watch
+- imagemin-pngquant
+- jshint-stylish
+- main-bower-files
+- require-dir
+- uglify-save-license
+- wiredep
 
-## Themes
+bower.json :
 
-The main less file 'src/styles/main.less' imports all other styles. Add a Bootswatch theme from the example provided inside this file.
+- jquery
+- bootstrap
+- bootswatch
+- fontawesome
+
+Compiles, auto-prefixes, concats, and sourcemaps the less into minified css. Uglifies, sourcemaps, and concats the javascript, and minifies the html. Runs imagemin on the images.
+
+Serves it up on browser-sync. Reloads on changes. The server runs out of .tmp. All files in temp are un-minified for development needs.
+
+The /public directory contains the production versions files.
+
+## How to use it?
+
+Clone the repo: git clone 'git clone https://github.com/swamper/boot-build.git'
+
+Run 'gulp' or 'gulp build'. Running 'gulp' cleans out .tmp and /public before building. Running 'gulp build' just overwrites.
+
+Run gulp serve and it will open a browser window on 'http://localhost:3000/'.
+
+Changes to anything in the /app folder reload the browser when running 'gulp serve'.
+
+## Testing
+
+Not wired up yet.
 
 ## Motivation
 
-The sole purpose of this app is for Bootstrap development. It is the starter base for building custom webapps with Bootstrap.
+Complete rewrite of 'boot-build'. 'boot-build' was originally put together out of another generator.
 
-- Designed to be as modular as possible.
-- Designed to incorporate Bootswatch themes.
-- Designed for the 'public' folder to be run on an existing apache server.
-- Designed to be a foundation and added to/expanded. I.E. add angular.js, express, etc...
+No generator used here now.
 
-## Installation
+95-99% of the code in here I typed by hand. I leaned on community resources but pretty well laid out all the gulp files in a pattern that made sense to me. It puts it all out in a format I can work with. I kept it modular as I could.
 
-- Clone the repo on Github: 'git clone https://github.com/swamper/boot-build.git'
-- Install dependencies: 'npm install'
-- Install Bower dependencies: 'bower install'
-- Anything you want to install extra for npm run 'npm install --save-dev <package>'
-- Anything you want to install extra for Bower run 'bower install --save-dev <package>'
-- Run 'gulp' to build. This outputs to the 'public' directory.
-- Run 'gulp serve' to preview and watch for changes. This outputs to the '.tmp' directory.
+This is a learning experience/experiment.
+
+## Bugs and Issues
 
 ## To Do
 
-## Contributors
+- Add testing
 
-## License
+- Wire in bower
 
-Licensing follows the original Yeoman generator licensing.
+## Copyright and License
 
-[BSD license](http://opensource.org/licenses/bsd-license.php)
+[*GPL V3*](//gnu.org/copyleft/gpl.html)
