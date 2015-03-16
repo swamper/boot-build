@@ -20,7 +20,7 @@ gulp.task('scripts', function() {
         .pipe($.jshint())
         .pipe($.jshint.reporter('jshint-stylish'))
         .pipe(gulp.dest('.tmp/js/'))
-        .pipe($.uglify())
+        .pipe($.uglify({preserveComments: $.uglifySaveLicense}))
         .pipe($.sourcemaps.write())
         .pipe(gulp.dest('public/js/'))
         .pipe(reload({
