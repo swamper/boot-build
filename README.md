@@ -5,6 +5,8 @@ Includes [*Bootswatch*](http://bootswatch.com) themes and [*Font-Awesome*](https
 
 ## THIS IS A W.I.P
 
+There should be no more base code rewrites however.
+
 ## What is it?
 
 In a nutshell...
@@ -51,6 +53,8 @@ The /public directory contains the production versions files.
 ## How to use it?
 
 Clone the repo: git clone 'git clone https://github.com/swamper/boot-build.git'
+
+Run 'npm install' and 'bower install' in the project root directory.
 
 Run 'gulp' or 'gulp build'. Running 'gulp' cleans out .tmp and /public before building. Running 'gulp build' just overwrites.
 
