@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 gulp.task('scripts', function() {
 
     var src = {
-        app: ('app/scripts/**/*.js', 'bower_components/bootstrap/js/*.js')
+        app: ('app/scripts/**/*.js')
     };
 
     return gulp.src(src.app)

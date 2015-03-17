@@ -9,7 +9,8 @@ gulp.task('copy', function() {
     var src = {
         fa: 'bower_components/fontawesome/fonts/*',
         glyph: 'bower_components/bootstrap/dist/fonts/*',
-        jquery: 'bower_components/jquery/dist/jquery.js'
+        jquery: 'bower_components/jquery/dist/jquery.min.js',
+        boot: 'bower_components/bootstrap/dist/js/bootstrap.min.js'
     };
 
     gulp.src(src.fa)
@@ -21,6 +22,10 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('public/fonts/glyphicons/'));
 
     gulp.src(src.jquery)
+        .pipe(gulp.dest('.tmp/js/'))
+        .pipe(gulp.dest('public/js/'));
+
+    gulp.src(src.boot)
         .pipe(gulp.dest('.tmp/js/'))
         .pipe(gulp.dest('public/js/'));
 });

@@ -3,52 +3,15 @@ A Bootstrap, Bootswatch, Gulp, less, and html app builder.
 
 Includes [*Bootswatch*](http://bootswatch.com) themes and [*Font-Awesome*](https://fortawesome.github.io/Font-Awesome/).
 
-## THIS IS A W.I.P
-
-There should be no more base code rewrites however.
+## THIS IS A W.I.P.
 
 ## What is it?
 
-In a nutshell...
+boot-build compiles, auto-prefixes, and sourcemaps the less into minified css. Uglifies, sourcemaps, and concats the javascript. Minifies the html. Runs imagemin on the images.
 
-package.json :
+Serves it up on browser-sync. Reloads on changes. The server runs out of '/.tmp'. All files in '/.tmp' except vendor files are un-minified for development needs.
 
-- browser-sync
-- del
-- gulp
-- gulp-autoprefixer
-- gulp-concat
-- gulp-filter
-- gulp-imagemin
-- gulp-jshint
-- gulp-karma
-- gulp-less
-- gulp-load-plugins
-- gulp-minify-css
-- gulp-minify-html
-- gulp-size
-- gulp-sourcemaps
-- gulp-uglify
-- gulp-watch
-- imagemin-pngquant
-- jshint-stylish
-- main-bower-files
-- require-dir
-- uglify-save-license
-- wiredep
-
-bower.json :
-
-- jquery
-- bootstrap
-- bootswatch
-- fontawesome
-
-Compiles, auto-prefixes, concats, and sourcemaps the less into minified css. Uglifies, sourcemaps, and concats the javascript, and minifies the html. Runs imagemin on the images.
-
-Serves it up on browser-sync. Reloads on changes. The server runs out of .tmp. All files in temp are un-minified for development needs.
-
-The /public directory contains the production versions files.
+The /public directory contains the minified production version files.
 
 ## How to use it?
 
@@ -58,13 +21,15 @@ Run 'npm install' and 'bower install' in the project root directory.
 
 Run 'gulp' or 'gulp build'. Running 'gulp' cleans out .tmp and /public before building. Running 'gulp build' just overwrites.
 
-Run gulp serve and it will open a browser window on 'http://localhost:3000/'.
+Run 'gulp serve' and it will open a browser window on 'http://localhost:3000/'.
 
-Changes to anything in the /app folder reload the browser when running 'gulp serve'.
+Changes to anything in the /app folder reload the browser when running 'gulp serve'. It will not rebuild on changes unless you are running 'gulp serve'.
+
+To change Bootswatch themes change the '/app/styles/main.less' entry. The '/app/styles/theme' directory is a place to add custom .less files to be linked into 'main.less' for custom elements.
 
 ## Testing
 
-Not wired up yet.
+Karma on phantomjs, mocha, chai, and jasmine set up for future use. Not anything really to test here currently. Intention was just to add the backend for it. Uh huh... I'll cross testing when I have to and not a moment sooner.
 
 ## Motivation
 
@@ -72,17 +37,15 @@ Complete rewrite of 'boot-build'. 'boot-build' was originally put together out o
 
 No generator used here now.
 
-95-99% of the code in here I typed by hand. I leaned on community resources but pretty well laid out all the gulp files in a pattern that made sense to me. It puts it all out in a format I can work with. I kept it modular as I could.
+95-99% of the code in here I typed by hand. I leaned on community resources but pretty well laid out all the gulp files in a pattern that made sense to me. It puts it all out in a format I can work with. I kept it as basic and modular as I could.
+
+Thought is to use this a base to build various different apps off of, this is just the starter template.
 
 This is a learning experience/experiment.
 
 ## Bugs and Issues
 
 ## To Do
-
-- Add testing
-
-- Wire in bower
 
 ## Copyright and License
 
