@@ -1,10 +1,10 @@
 {
   "name": "boot-build",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bootstrap app builder",
-  "main": "app.js",
+  "main": "",
   "scripts": {},
-  "author": "swamper (swamper838@gmail.com)",
+  "author": "",
   "license": "GPLv3",
   "private": true,
   "devDependencies": {
