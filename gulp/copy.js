@@ -9,8 +9,8 @@ gulp.task('copy', function() {
     var src = {
         fa: 'bower_components/fontawesome/fonts/*',
         glyph: 'bower_components/bootstrap/dist/fonts/*',
-        jquery: 'bower_components/jquery/dist/jquery.js',
-        boot: 'bower_components/bootstrap/dist/js/bootstrap.js'
+        jquery: 'bower_components/jquery/dist/jquery.min.js',
+        boot: 'bower_components/bootstrap/dist/js/bootstrap.min.js'
     };
 
     gulp.src(src.fa)
