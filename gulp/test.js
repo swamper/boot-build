@@ -15,7 +15,8 @@ var gulp = require('gulp'),
       });
 
       var testFiles = bowerDeps.js.concat([
-        path.src + '{app,bower_components}/**/*.js'
+        path.src + '/{bower_components,app}/**/*.js',
+        'tests/**/*.spec.js'
       ]);
 
       gulp.src(testFiles)
