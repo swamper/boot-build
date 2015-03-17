@@ -1,5 +1,4 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path'),
@@ -10,8 +9,10 @@ var gulp = require('gulp'),
 
 gulp.task('less', function() {
 
+    'use strict';
+
     var src = {
-        less: 'app/styles/**/*.less'
+        less: 'app/styles/main.less'
     };
 
     return gulp.src(src.less)

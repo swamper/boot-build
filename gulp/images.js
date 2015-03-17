@@ -1,5 +1,4 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path'),
@@ -10,6 +9,9 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant');
 
 gulp.task('images', function() {
+
+    'use strict';
+
     return gulp.src('app/img/**/*')
         .pipe(gulp.dest('.tmp/img/'))
         .pipe(imagemin({

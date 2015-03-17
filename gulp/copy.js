@@ -1,10 +1,11 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path');
 
 gulp.task('copy', function() {
+
+    'use strict';
 
     var src = {
         fa: 'bower_components/fontawesome/fonts/*',

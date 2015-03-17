@@ -1,5 +1,4 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path'),
@@ -7,6 +6,9 @@ var gulp = require('gulp'),
     reload = browserSync.reload;
 
 gulp.task('fonts', function() {
+
+    'use strict';
+
     var src = {
         fonts: ('app/fonts/**/*')
     };

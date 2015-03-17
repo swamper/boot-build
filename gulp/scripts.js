@@ -1,5 +1,4 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path'),
@@ -9,6 +8,8 @@ var gulp = require('gulp'),
 
 
 gulp.task('scripts', function() {
+
+    'use strict';
 
     var src = {
         app: ('app/scripts/**/*.js')

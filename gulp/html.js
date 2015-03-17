@@ -1,5 +1,4 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path'),
@@ -9,6 +8,8 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-minify-html');
 
 gulp.task('html', function() {
+
+    'use strict';
 
     var src = {
         html: 'app/*.html'
